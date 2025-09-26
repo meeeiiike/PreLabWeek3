@@ -32,4 +32,9 @@ public class ProductController {
         products.addAll(product);
         return products;
     }
+
+    @GetMapping("/count")
+    public int getCountProducts(){
+        return products.size();
+    }
 }
